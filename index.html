@@ -1,0 +1,39 @@
+
+<!-- !DOCTYPE html -->
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Laboratrivia</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<form>
+    <h2>Cuestionario</h2>
+    <h3> <span id="nombreHtml"></span>
+      Incrementa tus saberes</h3>
+    
+    <input type="text" id="txtSuma" 
+    placeholder="Calcula la suma: 2 + 2" required>
+    <input type="text" id="txtMulti" 
+    placeholder="Calcula la multiplicación: 5 * 5" required>
+    <input type="text" id="txtDivision" 
+    placeholder="Hallar la División: 50/10" required>    
+    
+    <input type="button" name="bntCalcular" value="Calcular" id="boton"  onclick="return contarAciertos()">
+                  
+    </form>
+                     
+      <footer>
+      <p>Hola, tus resultados son: </p>
+      <ul>
+        <li> Respuestas Correctas:
+          <span id="correctoHtml"></span> 
+         </li>
+        <li>  Respuestas Incorrectas:
+          <span id="incorrectoHtml"></span>
+        </li>
+      </ul>
+    </footer> 
+     <script type="text/javascript" src="app.js"></script>
+</body>
+  </html>
